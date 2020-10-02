@@ -43,4 +43,9 @@ Create the privatenet-us-vm instance
 gcloud compute instances create privatenet-us-vm --zone=us-central1-c --machine-type=f1-micro --subnet=privatenet-us --image-family=debian-10 --image-project=debian-cloud --boot-disk-size=10GB --boot-disk-type=pd-standard --boot-disk-device-name=privatenet-us-vm
 ```
 
+list compute instances
+```
+gcloud compute instances list --sort-by=ZONE
+
+```
 
